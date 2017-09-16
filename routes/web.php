@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "Olá" . 
+        "<br>Esta é a rota para cadastro/listagem de hábitos!";
+    
+    //return view('welcome');
 });
+
+Route::get('habitos','HabitosController@index');
